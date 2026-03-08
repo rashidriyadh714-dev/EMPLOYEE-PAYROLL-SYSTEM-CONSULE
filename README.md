@@ -64,7 +64,7 @@ Each employee type overrides `calculateSalary()` and provides its own salary log
 ## 5. Project Structure (Source Code)
 
 ```text
-Console-/
+EMPLOYEE-PAYROLL-SYSTEM-CONSULE-/
 |- src/
 |  |- Employee.java
 |  |- Taxable.java
