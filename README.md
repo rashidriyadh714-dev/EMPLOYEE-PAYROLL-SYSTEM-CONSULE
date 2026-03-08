@@ -87,7 +87,7 @@ The system allows users to:
 
 ## 4) UML Class Diagram (Simple)
 
-You can use this text-based UML in your report or redraw it in Draw.io / Lucidchart / StarUML.
+
 
 ```mermaid
 classDiagram
