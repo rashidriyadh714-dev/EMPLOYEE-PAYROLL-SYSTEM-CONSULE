@@ -235,7 +235,7 @@ Net Salary    : RM 4,600.00
 
 ---
 
-## 7) Short Explanation for Your Report
+## 7) Short Explanation of Report
 
 ### Introduction
 This project is an Employee Payroll System developed using Java. The purpose of the system is to manage employees and calculate salaries using Object-Oriented Programming principles.
@@ -256,31 +256,6 @@ The Employee Payroll System successfully demonstrates the core OOP principles in
 
 ---
 
-## 8) GitHub Submission Tip
-
-When uploading to GitHub:
-1. Create a new repository named: `employee-payroll-system-java`
-2. Upload all files from this ZIP.
-3. Copy your GitHub repository URL into your report.
-
-Example GitHub URL format:
-```text
-https://github.com/your-username/employee-payroll-system-java
-```
-
----
-
-## 9) Important Final Reminder
-
-Before submitting to LMS, make sure your report includes:
-- Full Name
-- Student ID
-- Class Code
-- Program
-- NRIC/Passport Number
-- GitHub repository URL
-- UML diagram
-- Screenshots of program output
 - Source code summary
 
 Good luck — this project is already structured to align strongly with the rubric.
