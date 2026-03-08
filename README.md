@@ -1,4 +1,5 @@
 # Employee Payroll System (Java Console Application)
+
 ---
 
 ## 1. Project Overview
@@ -196,7 +197,7 @@ java -cp src PayrollSystemApp
 
 ---
 
-## 9. Sample Output (Short)
+## 9. Sample Output (Complete Demonstration)
 
 ```text
 ============================================================
@@ -206,7 +207,7 @@ Load sample employees for demo? (y/n): y
 Sample data loaded successfully.
 
 ============================================================
-	EMPLOYEE PAYROLL SYSTEM (JAVA CONSOLE APP)
+        EMPLOYEE PAYROLL SYSTEM (JAVA CONSOLE APP)
 ============================================================
 1. Add Full-Time Employee
 2. Add Part-Time Employee
@@ -218,6 +219,78 @@ Sample data loaded successfully.
 8. Delete Employee
 9. Exit
 ============================================================
+Current Employee Count: 3
+
+Enter your choice: 5
+
+--- Search Employee ---
+Enter employee ID to search: E002
+Employee found:
+------------------------------------------------------------
+Employee ID   : E002
+Name          : Daniel Lim
+Department    : Sales
+Type          : Part-Time Employee
+Hourly Rate   : RM 25.00
+Hours Worked  : 128 hours
+Bonus         : RM 200.00
+Net Salary    : RM 3,400.00
+------------------------------------------------------------
+
+Enter your choice: 6
+
+--- Update Employee Department ---
+Enter employee ID: E003
+Enter new department: IT Operations
+Department updated successfully.
+
+Enter your choice: 7
+
+================ PAYROLL SUMMARY ================
+Total Employees   : 3
+Full-Time         : 1
+Part-Time         : 1
+Contract          : 1
+Total Payroll     : RM 10,910.00
+Average Salary    : RM 3,636.67
+Highest Salary    : Alicia Tan (E001) - RM 4,600.00
+Lowest Salary     : Nur Aisyah (E003) - RM 2,910.00
+===============================================
+
+Enter your choice: 8
+
+--- Delete Employee ---
+Enter employee ID to delete: E003
+Employee found:
+------------------------------------------------------------
+Employee ID   : E003
+Name          : Nur Aisyah
+Department    : IT Operations
+Type          : Contract Employee
+Contract Value : RM 18,000.00
+Duration      : 6 months
+Monthly Pay   : RM 3,000.00
+Tax Deduction : RM 90.00
+Net Salary    : RM 2,910.00
+------------------------------------------------------------
+Confirm deletion? (y/n): y
+Employee deleted successfully.
+
+Enter your choice: 7
+
+================ PAYROLL SUMMARY ================
+Total Employees   : 2
+Full-Time         : 1
+Part-Time         : 1
+Contract          : 0
+Total Payroll     : RM 8,000.00
+Average Salary    : RM 4,000.00
+Highest Salary    : Alicia Tan (E001) - RM 4,600.00
+Lowest Salary     : Daniel Lim (E002) - RM 3,400.00
+===============================================
+
+Enter your choice: 9
+Thank you for using the Employee Payroll System. Goodbye!
 ```
 
 ---
@@ -227,5 +300,4 @@ The Employee Payroll System successfully demonstrates OOP principles in Java thr
 
 ---
 
-- [ ] Source code uploaded successfully
 
