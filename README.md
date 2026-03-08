@@ -1,5 +1,4 @@
 # Employee Payroll System (Java Console Application)
-
 ---
 
 ## 1. Project Overview
@@ -61,10 +60,10 @@ Each employee type overrides `calculateSalary()` and provides its own salary log
 
 ---
 
-## 5. Project Structure
+## 5. Project Structure (Source Code)
 
 ```text
-EmployeePayrollSystem/
+Console-/
 |- src/
 |  |- Employee.java
 |  |- Taxable.java
@@ -74,7 +73,6 @@ EmployeePayrollSystem/
 |  |- PayrollManager.java
 |  |- PayrollSystemApp.java
 |- README.md
-|- README_SUBMISSION.md
 ```
 
 ---
@@ -90,7 +88,90 @@ EmployeePayrollSystem/
 
 ---
 
-## 7. Compile and Run
+## 7. UML Class Diagram
+
+```mermaid
+classDiagram
+	class Employee {
+		-String employeeId
+		-String fullName
+		-String department
+		+getEmployeeId() String
+		+setEmployeeId(String) void
+		+getFullName() String
+		+setFullName(String) void
+		+getDepartment() String
+		+setDepartment(String) void
+		+getEmployeeType() String
+		+calculateSalary() double
+		+getPayrollDetails() String
+		+displayInfo() void
+	}
+
+	class Taxable {
+		<<interface>>
+		+calculateTax() double
+	}
+
+	class FullTimeEmployee {
+		-double basicSalary
+		-double monthlyAllowance
+		-double performanceBonus
+		-double taxRate
+		+calculateTax() double
+		+calculateSalary() double
+		+getEmployeeType() String
+		+getPayrollDetails() String
+	}
+
+	class PartTimeEmployee {
+		-double hourlyRate
+		-int hoursWorked
+		+calculateSalary() double
+		+getEmployeeType() String
+		+getPayrollDetails() String
+	}
+
+	class ContractEmployee {
+		-double contractAmount
+		-int contractMonths
+		-double withholdingTaxRate
+		+calculateMonthlyPayment() double
+		+calculateTax() double
+		+calculateSalary() double
+		+getEmployeeType() String
+		+getPayrollDetails() String
+	}
+
+	class PayrollManager {
+		-List~Employee~ employees
+		+addEmployee(Employee) boolean
+		+hasEmployeeId(String) boolean
+		+findEmployeeById(String) Employee
+		+updateDepartment(String, String) boolean
+		+deleteEmployeeById(String) boolean
+		+displayAllEmployees() void
+		+calculateTotalPayroll() double
+		+calculateAverageSalary() double
+		+generatePayrollSummary() void
+	}
+
+	class PayrollSystemApp {
+		+main(String[]) void
+	}
+
+	Employee <|-- FullTimeEmployee
+	Employee <|-- PartTimeEmployee
+	Employee <|-- ContractEmployee
+	Taxable <|.. FullTimeEmployee
+	Taxable <|.. ContractEmployee
+	PayrollManager "1" o-- "many" Employee
+	PayrollSystemApp ..> PayrollManager
+```
+
+---
+
+## 8. Compile and Run
 
 ### Compile
 From the `src` folder:
@@ -115,7 +196,7 @@ java -cp src PayrollSystemApp
 
 ---
 
-## 8. Sample Output (Short)
+## 9. Sample Output (Short)
 
 ```text
 ============================================================
@@ -141,8 +222,10 @@ Sample data loaded successfully.
 
 ---
 
-## 9. Conclusion
+## 10. Conclusion
 The Employee Payroll System successfully demonstrates OOP principles in Java through a practical and structured payroll application. The system is modular, readable, and suitable for academic submission with complete core functionality and validation.
 
 ---
+
+- [ ] Source code uploaded successfully
 
