@@ -256,6 +256,4 @@ The Employee Payroll System successfully demonstrates the core OOP principles in
 
 ---
 
-- Source code summary
 
-Good luck — this project is already structured to align strongly with the rubric.
